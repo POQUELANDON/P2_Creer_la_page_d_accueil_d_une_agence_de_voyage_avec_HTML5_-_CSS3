@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Booki</title>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -21,18 +21,18 @@
     />
     <script
       src="https://kit.fontawesome.com/c9db7f30b8.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
   </head>
 
   <body>
     <div class="main-container">
-      <!-- Header content goes here -->
+      <!-- Header -->
       <header>
         <div class="logo">
-          <img src=".\images\logo\Booki.png" alt="Booki" />
+          <img src="./images/logo/Booki.png" alt="Booki"/>
         </div>
         <nav>
           <ul>
@@ -41,51 +41,52 @@
           </ul>
         </nav>
       </header>
+
+      <!-- Main -->
       <main>
         <section class="info-group">
-            <article class="headLine">
-                <h2>
-                    Trouvez votre hébergement pour des vacances de rêve
-                </h2>
-                <p>
-                    En plein centre-ville ou en pleine nature
-                </p>
-            </article>
-            <article class="searchBar">
-                    <form method="get" action="">
-                        <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
-                        <input type="text" id="ville" name="ville" placeholder="Marseille, France" required>
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Rechercher</button>
-                    </form>
-            </article>
-            <article class="filterBar">
-                <h3>
-                    Filtres
-                </h3>
-                    <button type="button">
-                        <i class="fa-solid fa-money-bill-wave"></i> Économique
-                    </button>
-                    <button type="button">
-                        <i class="fa-solid fa-person"></i> Familial
-                    </button>
-                    <button type="button">
-                        <i class="fa-solid fa-heart"></i> Romantique
-                    </button>
-                    <button type="button">
-                        <i class="fa-solid fa-fire"></i> Nos pépites
-                    </button>
-            </article>
-            <article class="infoBar">
-                <i class="fa-solid fa-info"></i>
-                <p>
-                    Plus de 500 logements sont disponibles dans cette ville
-                </p>
-            </article>
+          <article class="headLine">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>
+                En plein centre-ville ou en pleine nature
+            </p>
+          </article>
+          <article class="searchBar">
+            <form>
+              <label for="ville">
+                <i class="fa-solid fa-location-dot"></i>
+              </label>
+              <input type="text" id="ville" name="ville" placeholder="Marseille, France" required/>
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>Rechercher
+              </button>
+            </form>
+          </article>
+          <article class="filterBar">
+            <h3>Filtres</h3>
+            <button type="button">
+              <i class="fa-solid fa-money-bill-wave"></i> Économique
+            </button>
+            <button type="button">
+              <i class="fa-solid fa-person"></i> Familial
+            </button>
+            <button type="button">
+              <i class="fa-solid fa-heart"></i> Romantique
+            </button>
+            <button type="button">
+              <i class="fa-solid fa-fire"></i> Nos pépites
+            </button>
+          </article>
+          <article class="infoBar">
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </article>
         </section>
+
         <div class="hebergements-and-populaires">
           <!-- Section: Hébergements -->
           <section class="hebergements" id="hebergements">
-            
+            <h2></h2>
           </section>
           <!-- Section: Populaires -->
           <section class="populaires">
@@ -96,10 +97,7 @@
             <div class="populaires-cards">
               <!-- Card 1 -->
               <article class="card">
-                <img
-                  src="./images/hebergements/emile-guillemot.jpg"
-                  alt="Chambre d'hôtel avec un lit"
-                />
+                <img src="./images/hebergements/emile-guillemot.jpg" alt="Chambre d'hôtel avec un lit"/>
                 <div class="card-content">
                   <div class="card-txt">
                     <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -112,20 +110,14 @@
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                    <i
-                      class="fa-xs fa-solid fa-star neutral-star"
-                      aria-hidden="true"
-                    ></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                     <span class="sr-only">Note de 4 sur 5</span>
                   </div>
                 </div>
               </article>
               <!-- Card 2 -->
               <article class="card">
-                <img
-                  src="./images/hebergements/aw-creative.jpg"
-                  alt="Chambre d'hôtel avec un lit"
-                />
+                <img src="./images/hebergements/aw-creative.jpg" alt="Chambre d'hôtel avec un lit"/>
                 <div class="card-content">
                   <div class="card-txt">
                     <h3 class="card-title">
@@ -140,20 +132,14 @@
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                    <i
-                      class="fa-xs fa-solid fa-star neutral-star"
-                      aria-hidden="true"
-                    ></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                     <span class="sr-only">Note de 4 sur 5</span>
                   </div>
                 </div>
               </article>
               <!-- Card 3 -->
               <article class="card">
-                <img
-                  src="./images/hebergements/febrian-zakaria2.jpg"
-                  alt="Chambre d'hôtel avec un lit"
-                />
+                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Chambre d'hôtel avec un lit"/>
                 <div class="card-content">
                   <div class="card-txt">
                     <h3 class="card-title">Hôtel Bleu et Blanc</h3>
@@ -166,10 +152,7 @@
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                    <i
-                      class="fa-xs fa-solid fa-star neutral-star"
-                      aria-hidden="true"
-                    ></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                     <span class="sr-only">Note de 4 sur 5</span>
                   </div>
                 </div>
