@@ -198,6 +198,10 @@ main {
     line-height: normal;
 }
 
+.searchBar form button i {
+    visibility: hidden;
+}
+
 /* FilterBar */
 
 .section-title {
