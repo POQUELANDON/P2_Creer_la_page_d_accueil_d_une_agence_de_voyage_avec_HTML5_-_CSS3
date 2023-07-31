@@ -23,14 +23,16 @@ body {
     flex-direction: column;
 }
 
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
 
 h2 {
     color: #000;
-    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }
 
 p {
@@ -250,25 +252,21 @@ main {
     gap: 10px;
     align-self: stretch;
  }
+
  
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
+ .card {
+     background-color: white;
+     border-radius: 20px;
+     padding: 5px;
+     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+    
+    .card img {
+        object-fit: cover;
+    }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
+    .card-title {
+        font-size: 16px;
 }
 
 .euro {
@@ -281,8 +279,12 @@ main {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
+    width: 1340px;
+    height: 612px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
 }
 
 .hebergements-and-populaires section {
@@ -290,11 +292,63 @@ main {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    align-self: stretch;
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--grey, #F2F2F2);
+}
+
+.hebergements-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.hebergements-card .card {
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    gap: 4px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: #FFF;
+    /* Shadow/Card */
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.hebergements-card .card img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px solid var(--white, #FFF);
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.hebergements-card .card-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 /****** Populaires ***********/
