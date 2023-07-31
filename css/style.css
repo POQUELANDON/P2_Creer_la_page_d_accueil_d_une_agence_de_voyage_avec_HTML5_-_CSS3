@@ -181,7 +181,6 @@ main {
 }
 
 .searchBar form button {
-    width: auto;
     height: 49px;
     padding: 15px 16px;
     align-items: center;
@@ -203,6 +202,46 @@ main {
 }
 
 /* FilterBar */
+.filterBar, .filterBar h3 {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+    text-align: center;
+    /* Title/Filter */
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.filterBar button {
+    display: flex;
+    height: 42px;
+    padding: 4px 19px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    color: var(--black, #000);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.filterBar button i {
+    width: 22px;
+    height: 22px;
+}
+
+.filterBar button:hover {
+    background: var(--blue-light, #DEEBFF);
+ }
 
 .section-title {
     margin: 0;
