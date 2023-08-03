@@ -1,5 +1,6 @@
 /****** General ***********/
 * {
+    margin: 0;
     font-family: "Raleway", sans-serif;
 }
 
@@ -19,7 +20,7 @@
 body {
     display: flex;
     width: 1440px;
-    padding-bottom: 60.5px;
+    padding-bottom: 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
@@ -60,7 +61,7 @@ p {
 
 /****** Header styles ***********/
 header {
-    width: 1440px;
+    width: 100%;
     height: 79px;
     display: flex;
     padding-right: 0px;
@@ -81,6 +82,10 @@ header {
 .logo img {
     width: 61.09px;
     height: 19px;
+}
+
+nav {
+    width: 100%;
 }
 
 nav ul {
@@ -105,8 +110,6 @@ nav ul li {
 }
 
 nav ul li a {
-    position: relative;
-    text-decoration: none;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -147,8 +150,6 @@ main {
 /* Headline*/
 .headLine {
     display: flex;
-    height: 53px;
-    margin-bottom: 35px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -158,7 +159,6 @@ main {
 /* Search-bar */
 .searchBar form {
     display: flex;
-    width: 377px;
     height: 49px;
     align-items: center;
     gap: 24px;
@@ -233,7 +233,7 @@ main {
 }
 
 .filterBar button {
-    display: flex;
+    display: inline-flex;
     height: 42px;
     padding: 4px 19px;
     align-items: center;
@@ -538,6 +538,143 @@ footer ul {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
+@media (max-width: 768px) {
+    body {
+            width: 100%;
+            /* Redimensionner le corps à 100% de la largeur de l'écran */
+            gap: 30px;
+            justify-items: stretch;
+            /* Réduire l'espacement entre les éléments pour l'affichage mobile */
+        }
+
+    header {
+        flex-direction: column;
+        /* Afficher les éléments du header en colonne pour l'affichage mobile */
+        align-items: center;
+        /* Centrer horizontalement le contenu du header */
+        gap: 0;
+        /* Réduire l'espacement entre les éléments du header pour l'affichage mobile */
+        height: auto;
+        /* Ajuster la hauteur du header en fonction du contenu */
+    }
+
+    .logo {
+        align-items: center;
+        /* Centrer horizontalement le logo */
+        padding: 30px;
+        /* Réduire le padding du logo pour l'affichage mobile */
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        /* Ajuster la largeur du menu de navigation à 100% de la largeur de l'écran */
+        width: 100%;
+        height: auto;
+        padding: 0;
+        /* Supprimer le padding du menu de navigation pour l'affichage mobile */
+        gap: 15px;
+        /* Réduire l'espacement entre les éléments du menu de navigation pour l'affichage mobile */
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        justify-content: center;
+        /* Centrer les éléments du menu de navigation horizontalement */
+    }
+
+    nav ul li a:hover {
+        border-top: none;
+        /* Supprimer la bordure du haut pour l'affichage mobile */
+        border-bottom: 2px solid #0065fc;
+        /* Ajouter la bordure du bas pour l'affichage mobile */
+        padding-bottom: 15px;
+        /* Ajouter du padding en bas pour maintenir l'espace entre le texte et la bordure */
+    }
+    
+    main {
+        padding: 0px;
+    }
+
+    .info-group {
+        padding: 0px 20px;
+        /* Réduire le padding pour s'adapter à l'affichage mobile */
+    }
+
+    .searchBar form {
+        flex-shrink: 0;
+    }
+
+    .searchBar form button {
+        color: transparent;
+        /* Masquer le texte "Rechercher" */
+        display: inline-flex;
+        /* Afficher le bouton en tant que flexbox inline */
+        width: 49px;
+        height: 49px;
+        padding: 15px 16px;
+        align-items: center;
+        gap: 10px;
+        /* Espacement entre l'icône et le texte */
+        flex-shrink: 0;
+        border-radius: 15px;
+        border: 1px solid var(--blue, #0065FC);
+        background: var(--blue, #0065FC);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        /* Ajouter une ombre au bouton */
+    }
+
+    .searchBar form button i {
+        visibility: visible;
+        /* Afficher l'icône */
+        color: #FFFFFF;
+        width: 17px;
+        height: 17px;
+    }
+
+    .filterBar h3 {
+        width: 100%;
+        flex-shrink: 0;
+        justify-content: flex-start;
+    }
+    .filterBar  {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+    }
+
+    .hebergements-and-populaires {
+            flex-direction: column;
+        }
+    
+        .hebergements {
+            width: 100%;
+        }
+    
+        .populaires {
+            width: 100%;
+            margin-top: 50px;
+        }
+    
+        .populaires-cards {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .populaires-cards .card {
+            width: 30%;
+        }
+    
+        .populaires-cards .card-title {
+            font-size: 14px;
+        }
+    
+        .populaires-cards .card-subtitle {
+            font-size: 13px;
+        }
+    }
