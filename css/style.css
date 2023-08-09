@@ -667,7 +667,7 @@ footer ul {
     .search-bar form button {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
-    .search-bar form button p {
+    .search-bar form button span {
         display: none;
     }
 
