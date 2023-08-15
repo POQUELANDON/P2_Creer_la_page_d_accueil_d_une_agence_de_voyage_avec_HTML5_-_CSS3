@@ -2,6 +2,10 @@
 * {
     margin: 0;
     font-family: "Raleway", sans-serif;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 :root {
@@ -22,31 +26,19 @@ body {
     padding-bottom: 0;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
     margin: auto;
 }
 
 a {
     text-decoration: none;
-    color: #000;
 }
 
 .section-title {
-    margin: 0;
     font-size: 22px;
-    color: #000;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 .title-filter {
-    margin: 0;
     font-size: 18px;
-    color: #000;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 p {
@@ -65,6 +57,7 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     align-self: stretch;
+    margin-bottom: 30px;
 }
 
 .logo {
@@ -111,9 +104,7 @@ nav ul li {
 nav ul li a {
     text-align: center;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 nav ul li a.active {
@@ -130,9 +121,7 @@ main {
     display: flex;
     padding: 0px 50px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 35px;
-    align-self: stretch;
 }
 
 /* Info-Group */
@@ -174,12 +163,8 @@ main {
 .search-bar form input[type="text"] {
     border: none;
     outline: none;
-    color: #000;
     text-align: center;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     flex-grow: 1;
 }
 
@@ -194,9 +179,12 @@ main {
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+}
+
+.search-bar form button span {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
 }
 
 .search-bar form button i {
@@ -211,7 +199,6 @@ main {
     height: auto;
     align-items: center;
     gap: 15px;
-    color: #000;
     text-align: center;
 }
 
@@ -308,9 +295,7 @@ main {
 /* Hebergements And Populaires */
 .hebergements-and-populaires {
     display: flex;
-    align-items: center;
     gap: 40px;
-    align-self: stretch;
 }
 
 .hebergements-and-populaires section {
@@ -371,13 +356,6 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
-}
-
-.hebergements-card .card-title,
-.hebergements-card .card-subtitle,
-.hebergements-card .card-rating {
-    margin: 0;
     align-self: stretch;
 }
 
@@ -443,10 +421,6 @@ main {
     align-self: stretch;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
 /* Activités */
 .activites {
     display: flex;
@@ -495,21 +469,16 @@ main {
     align-self: stretch;
 }
 
-.activites-card .card-title {
-    margin: 0;
-}
-
 /* Footer */
 footer {
     display: flex;
-    margin: 0 50px 0 50px;
+    margin: 35px 50px 0 50px;
     align-items: flex-start;
     align-self: stretch;
     background: var(--grey, #F2F2F2);
 }
 
 footer ul {
-    margin: 0;
     list-style: none;
     display: flex;
     padding: 20px;
@@ -520,22 +489,21 @@ footer ul {
     align-self: stretch;
 }
 
+footer ul li a {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 /* Media queries */
 /* Medium devices (Large Desketop, more than 1440px) */
 @media (min-width: 1441px) {
     body {
         width: 1440px;
-        height: max-content;
     }
 }
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    body {
-        width: 100%;
-        height: max-content;
-    }
-
     /* Header */
     nav ul {
         padding: 0px 50px;
@@ -596,19 +564,10 @@ footer ul {
 
 /* Small devices (phones, less than 768px and more than 320px) */
 @media (max-width: 768px) and (min-width: 320px) {
-    body {
-        width: 100%;
-        height: max-content;
-        gap: 30px;
-        justify-items: stretch;
-        align-items: flex-start;
-    }
-
     /* Header */
     header {
         flex-direction: column;
         align-items: center;
-        gap: 0;
         height: auto;
     }
 
@@ -780,10 +739,10 @@ footer ul {
 
     /* Footer */
     footer {
-        margin: 0;
+        margin: 35px 0 0 0;
         padding: 30px;
         flex-direction: column;
-        gap: 50px;
+        gap: 50px;        
     }
 
     footer ul {
